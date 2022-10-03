@@ -1,0 +1,314 @@
+body {
+  background-color: #deeced;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.header {
+  padding-bottom: 40px;
+  padding-top: 48px;
+}
+
+.header-title {
+  padding-right: 30px;
+  border-right: 1px solid #5d5f7e;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  color: #2E3156;
+}
+
+.header-sub-title {
+  padding-left: 33px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #5D5F7E;
+}
+
+.label {
+  margin: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5D5F7E;
+}
+
+.search-icon {
+  position: relative;
+  width: 100%;
+  height: 57px;
+  font-size: 15px;
+  background-color: #c9dde2;
+  border-radius: 8px;
+  border: none;
+  padding-left: 15px;
+}
+
+.search-icon:focus-visible {
+  outline: 0;
+}
+
+.fa-search {
+  position: absolute;
+  left: 47%;
+  top: 23%;
+}
+
+.pokedex-dropdown{
+  background-color: #c9dde2;
+  height: 57px;
+}
+
+.pokedex-dropdown:focus-within {
+  background-color: #ffff;
+  width: -webkit-fill-available;
+}
+
+.pokedex-dropdown > button, .pokedex-dropdown > button:hover {
+  height: 57px;
+  color: rgba(93, 95, 126, 0.5);
+  font-size: 16px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.fa-chevron-down {
+  padding-left : 10px;
+}
+
+button.show {
+  border: 0;
+}
+
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  border: 1px dashed #2E3156;
+  border-radius: 8px;
+  width: 11rem;
+  margin: 0 auto;
+  display: none;
+  margin-bottom: 40px;
+}
+
+.show {
+  display: block;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+  
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+  
+img.card-image {
+  margin-top: 40px;
+}
+  
+.card-body {
+  margin-top: 15px;
+}
+  
+.card-container {
+  margin-top: 41px;
+}
+  
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+  
+ul > li {
+  border-bottom: inset;
+  margin: 0px 12px 4px 12px
+}
+  
+.detail-card {
+  width: 12rem;
+  height: 18rem;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  border: dashed black;
+  border-radius: 10px;
+}
+  
+.detail-card > img {
+  margin-top: 85px;
+  align-self: center;
+}
+  
+.modal-content {
+  background: #deeced;
+}
+  
+.stats-container {
+  height: 12rem;
+  background-color: #b0d2d3;
+  margin: 0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.pok-attributes {
+  margin-top: 30px;
+}
+  
+.detail-title {
+  font-size: 20px;
+  padding-right: 25px;
+  font-weight: bold;
+  border-right: 1px solid #5d5f7e;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.detail-title-close {
+  text-align: right;
+}
+
+.detail-header {
+  text-align: center;
+}
+
+.close {
+  background: transparent;
+  border: none;
+}
+  
+.pokemon-detail {
+  margin-top: 30px;
+}
+
+.badge {
+  color:#5d5f80;
+  margin-right: 5px;
+  border: 1px solid;
+}
+
+.header-label{
+  font-weight: 700;
+}
+#pokemon-detail {
+  max-height: 220px;
+  overflow: hidden;
+}
+
+#filterModal .modal-content {
+  height: 95vh;
+}
+
+.detail-card-wrapper{
+  display: flex;
+}
+
+.detail-desc-wrapper{
+  margin-left: 15px;
+}
+
+@media (max-width: 768px){
+  .header{
+      display: inline;
+  }
+  .header-wrapper {
+      display: block;
+  }
+  .header-title {
+      border: none;
+  }
+  .header-sub-title{
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-left:unset;
+  }
+  .search-container{
+      width: 60%;
+  }
+
+  div.card:nth-child(even) {
+      background: red;
+    }
+  .mo-detail-card{
+      display: inherit;
+  }
+  .pokemon-desc {
+      display: none;
+  }
+  .mo-btn-close {
+      text-align: end;
+      position: absolute;
+      padding-right: 45px;
+  }
+  
+    
+}
+.btn-container{
+  display: none;
+}
+
+#js-poke-container{
+  overflow: auto;
+}
+
+.read-more{
+  cursor: pointer;
+  font-weight: 700;
+  color: #2E3156;
+}
+.read-more:hover {
+  color: #2E3156;
+}
+
+.mo-btn-controls{
+display: none;
+}
+
+.mo-detail-title{
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  overflow-wrap: break-word;
+}
+.mo-detail-card {
+  margin-bottom: 15px;
+  display: none;
+}
+
+@media (max-width: 440px){
+  .card {
+      width: 100%;
+  }
+}
+
+@keyframes bounce {
+  20% {
+      transform: translateY(-6px);
+  }
+
+  40% {
+      transform: translateY(0px);
+  }
+
+  80% {
+      transform: translateY(-2px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
